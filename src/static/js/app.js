@@ -3,6 +3,11 @@ function App() {
     return (
         <Container>
             <Row>
+                <Col>
+                    <h1 className="text-center my-4">ToDo app sanaagourine084</h1>
+                </Col>
+            </Row>
+            <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
                 </Col>
@@ -10,6 +15,7 @@ function App() {
         </Container>
     );
 }
+
 
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
