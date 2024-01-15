@@ -4,7 +4,6 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
-                    <h1>ToDo app by sanaagourine084</h1>
                     <TodoListCard />
                 </Col>
             </Row>
@@ -52,6 +51,7 @@ function TodoListCard() {
 
     return (
         <React.Fragment>
+            <h1 className="text-center">Sanaa</h1> {/* Title added here */}
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
                 <p className="text-center">No items yet! Add one above!</p>
@@ -67,6 +67,7 @@ function TodoListCard() {
         </React.Fragment>
     );
 }
+
 
 function AddItemForm({ onNewItem }) {
     const { Form, InputGroup, Button } = ReactBootstrap;
@@ -179,3 +180,4 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
