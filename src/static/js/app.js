@@ -51,8 +51,10 @@ function TodoListCard() {
 
     return (
         <React.Fragment>
-            <h1 className="text-center">Sanaa</h1> {/* Title added here */}
-            <AddItemForm onNewItem={onNewItem} />
+            <div className="text-center mb-3"> {/* Div for title and form */}
+                <h2 className="mb-2">Add New Item</h2> {/* Title added here */}
+                <AddItemForm onNewItem={onNewItem} />
+            </div>
             {items.length === 0 && (
                 <p className="text-center">No items yet! Add one above!</p>
             )}
